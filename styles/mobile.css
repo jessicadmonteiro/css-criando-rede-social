@@ -64,7 +64,7 @@
     
     .container_modal{
         width: 24rem;
-        position: absolute;
+        position: fixed;
         left: 1.68rem;
         top: 2.81rem;
         padding: 0 1.25rem 1.25rem 1.25rem;

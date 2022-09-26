@@ -22,7 +22,6 @@ for(let i = 0; i < buttonModal.length; i++){
         let valueButtonModal = buttonModal[i].getAttribute("data-modal")
 
         document.getElementById(valueButtonModal).classList.toggle("show_screen")
-        console.log(document.getElementById(valueButtonModal))
     })
 }
 
