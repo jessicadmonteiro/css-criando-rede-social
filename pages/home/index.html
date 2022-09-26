@@ -6,30 +6,280 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../styles/globalStyles.css" />
     <link rel="stylesheet" href="../../styles/style.css" />
-    <link rel="stylesheet" href="../../styles/navbar.css" />
+    <link rel="stylesheet" href="../../styles/menu.css" />
     <link rel="stylesheet" href="../../styles/inputs.css" />
+    <link rel="stylesheet" href="../../styles/modal.css">
+    <link rel="stylesheet" href="../../styles/buttons.css">
+    <link rel="stylesheet" href="../../styles/mobile.css">
+    <link rel="stylesheet" href="style.css">
     <title>TechPosters - Rede Social</title>
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <div class="navbar-items">
+      <nav class="container_menu" >
+        <div class="menu_items">
           <h3>TechPosters</h3>
-          <div class="navbar-links">
-            <a href="#"><button class="navbar-link">Login</button></a>
-            <a href="./pages/resgister/index.html"><button class="navbar-link">Registro</button></a>
+          <div>
+            <a href="#"><button class="bt_leave">Sair</button></a>
           </div>
         </div>
-        
-      </nav>
+        </nav>
     </header>
-    <main>
-      <section class="section-principal">
-        <div>
-          posts
+
+    <section class="container">
+      <div>
+        <section class="pandding_top">
+          <ul>
+            <li>
+              <div class="user">
+                <img src="../../assets/img/user1.svg" alt="">
+                <span>
+                  <h4 class="name font_size20px color_text">Samuel Leão</h4>
+                  <p class="craft color_text">Front end Engineer</p>
+                </span>
+              </div>
+              <input class="width_input margin_input pnadding_input borde_color_input" type="text"
+              placeholder="Digitar titulo do post">
+              <textarea class="width_input margin_input pnadding_input borde_color_input" name="descrição" placeholder="Digitar descrição do post" id="" cols="713" rows="130"></textarea>
+              <button class="bt_post">Postar</button>
+            </li>
+          </ul>
+        </section>
+            
+        <aside class="aside_mobile">
+          <h4 class="color_text">Sugestões para você seguir</h4>
+          <ul>
+            <li class="container_suggestions">
+              <span class="user">
+                <img src="../../assets/img/user3.svg" alt="">
+                <span>
+                  <h4 class="name font_size20px color_text">Carlos Lima</h4>
+                  <p class="craft color_text">UX e UI Desginer</p>
+                </span>
+              </span>
+              <button class="bt_follow" >Seguir</button>
+            </li>
+            <li class="container_suggestions">
+              <span class="user">
+                <img src="../../assets/img/user6.svg" alt="">
+                <span>
+                  <h4 class="name font_size20px color_text">Larissa Camargo</h4>
+                  <p class="craft color_text">UI Developer</p>
+                </span>
+              </span>
+              <button class="bt_follow">Seguir</button>
+            </li>
+            <li class="container_suggestions">
+              <span class="user">
+                <img src="../../assets/img/user7.svg" alt="">
+                <span>
+                  <h4 class="name font_size20px color_text">Filipe Gutierry</h4>
+                  <p class="craft color_text">Full Stack Developer</p>
+                </span>
+              </span>
+              <button class="bt_follow">Seguir</button>
+            </li>
+          </ul>
+        </aside>
+
+        <h2 class="margim_bottom color_text ">Posts</h2>
+        <ul class="container_posts">
+          <li>
+            <span class="user">
+              <img src="../../assets/img/user1.svg" alt="">
+              <span>
+                <h4 class="name font_size20px color_text">Samuel Leão</h4>
+                <p class="craft color_text">Front end Engineer</p>
+              </span>
+            </span>
+            <h3 class="title_post width_text color_text">Como criar um interface simples e agradável utilizando boas práticas de design
+            </h3>
+            <p class="description width_text">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design. </p>
+            <button class="bt_open_post" data-modal="postSamuelLeao" >Abrir Post</button>
+            <button class="bt_trasparent"> <small class="bt_heart">🤍</small> <small id="sum">25</small></button>
+          </li>
+          <li>
+            <span class="user">
+              <img src="../../assets/img/user2.svg" alt="">
+              <span>
+                <h4 class="name font_size20px color_text">Samuel Persuhn</h4>
+                <p class="craft color_text">Front end Engineer</p>
+              </span>
+            </span>
+            <h3 class="title_post width_text color_text">Empresa de Tecnologia da Informação abre vagas para programa de estágio
+            </h3>
+            <p class="description width_text">A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de agosto. </p>
+            <button class="bt_open_post" data-modal="postSamuel" >Abrir Post</button>
+            <button class="bt_trasparent"> <small class="bt_heart">🤍</small> <small>25</small></button>
+          </li>
+          <li>
+            <span class="user">
+              <img src="../../assets/img/user4.svg" alt="">
+              <span>
+                <h4 class="name font_size20px color_text">Carla Maria</h4>
+                <p class="craft color_text">Back end Engineer</p>
+              </span>
+            </span>
+            <h3 class="title_post width_text color_text">Como melhorar sua lógica de programação? Desenvolvemos 5 passos para te ajudar
+            </h3>
+            <p class="description width_text">Para quem está começando na área de T.I, em pleno século 21 este conceito pode parecer um grande desafio, pois requer muitas habilidades em diversas áreas de estudo, principalmente....</p>
+            <button class="bt_open_post" data-modal="postCarla">Abrir Post</button>
+            <button class="bt_trasparent"> <small class="bt_heart">🤍</small> <small>19</small></button>
+          </li>
+          <li>
+            <span class="user">
+              <img src="../../assets/img/user5.svg" alt="">
+              <span>
+                <h4 class="name font_size20px color_text">Júlia Martins</h4>
+                <p class="craft color_text">Devop's</p>
+              </span>
+            </span>
+            <h3 class="title_post width_text color_text">NextJS como essa ferramenta revolucionou a maneira de desenvolver sites
+            </h3>
+            <p class="description width_text">Provavelmente, você já ouviu falar do Next.js, considerado o framework mais popular do mercado. Com a expansão do mercado de tecnologia e sua influência em serviços de diver...</p>
+            <button class="bt_open_post" data-modal="postJulia" >Abrir Post</button>
+            <button class="bt_trasparent"> <small class="bt_heart">🤍</small> <small>8</small></button>
+          </li>
+        </ul>
+      </div>
+        
+      <aside class="aside_desktop">
+        <h4 class="font_size20px color_text">Sugestões para você seguir</h4>
+        <ul>
+          <li class="container_suggestions">
+            <span class="user">
+              <img src="../../assets/img/user3.svg" alt="">
+              <span>
+                <h4 class="name font_size20px color_text">Carlos Lima</h4>
+                <p class="craft color_text">UX e UI Desginer</p>
+              </span>
+            </span>
+            <button class="bt_follow" >Seguir</button>
+          </li>
+          <li class="container_suggestions">
+            <span class="user">
+              <img src="../../assets/img/user6.svg" alt="">
+              <span>
+                <h4 class="name font_size20px color_text">Larissa Camargo</h4>
+                <p class="craft color_text">UI Developer</p>
+              </span>
+            </span>
+            <button class="bt_follow">Seguir</button>
+          </li>
+          <li class="container_suggestions">
+            <span class="user">
+              <img src="../../assets/img/user7.svg" alt="">
+              <span>
+                <h4 class="name font_size20px color_text">Filipe Gutierry</h4>
+                <p class="craft color_text">Full Stack Developer</p>
+              </span>
+            </span>
+            <button class="bt_follow">Seguir</button>
+          </li>
+        </ul>
+      </aside>
+
+    </section>
+
+    <div class="wrappe_modal" id="postSamuelLeao">
+      <article class="container_modal">
+        <div class="box_user_remove">
+          <span class="user">
+            <img src="../../assets/img/user1.svg" alt="">
+            <span>
+              <h4 class="name color_text">Samuel Leão</h4>
+              <p class="craft color_text">Front end Engineer</p>
+            </span>
+          </span>
+          <span>
+            <button class="buttonRemove_modal" data-modal="postSamuelLeao">X</button>
+          </span>
         </div>
-      </section>
-    </main>
+        <h3 class="title_post color_text">Como criar um interface simples e agradável utilizando boas práticas de design
+        </h3>
+        <p class="description_modal">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
+
+        <p class="description_modal">Antes de iniciar a criação de qualquer projeto, busque referências de aplicações que tenham a ver com o nicho que você está desenvolvendo. Por exemplo, quando quero criar um e-commerce de roupas, vou reservar um momento para buscar por aplicações do gênero, tanto acessando ou baixando apps e vendo o que se repete de informações em cada um dos aplicativos e sites referentes a compra de roupas, e também, observar cores que normalmente você enxerga em cada um dos apps.</p>
+      </article>
+    </div>
+
+    <div class="wrappe_modal" id="postSamuel">
+      <article class="container_modal">
+        <div class="box_user_remove">
+          <span class="user">
+            <img src="../../assets/img/user2.svg" alt="">
+            <span>
+              <h4 class="name font_size20px color_text">Samuel Persuhn</h4>
+              <p class="craft color_text">Front end Engineer</p>
+            </span>
+          </span>
+          <span>
+            <button class="buttonRemove_modal" data-modal="postSamuel">X</button>
+          </span>
+        </div>
+        <h3 class="title_post color_text">Empresa de Tecnologia da Informação abre vagas para programa de estágio
+        </h3>
+        <p class="description_modal">A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de agosto.
+        </p>
+        <p class="description_modal">
+          O programa é conhecido como Generic Wars, com inspiração nos filmes Star Wars. Nas histórias, os iniciantes fazem treinamentos para se tornar cavaleiros Jedi, que compõem o lado bom da força.
+        </p>
+        <p class="description_modal">A empresa explica que este princípio também é aplicado na empresa, em que a ideia é desenvolver talentos na área de tecnologia que vão aprender, desde cedo, a colocar a mão na massa, atuando diretamente com clientes nacionais e internacionais.</p>
+      </article>
+    </div>
+
+      <div class="wrappe_modal" id="postCarla">
+        <article class="container_modal">
+          <div class="box_user_remove">
+            <span class="user">
+              <img src="../../assets/img/user4.svg" alt="">
+              <span>
+                <h4 class="name font_size20px color_text">Carla Maria</h4>
+                <p class="craft color_text">Back end Engineer</p>
+              </span>
+            </span>
+            <span>
+              <button class="buttonRemove_modal" data-modal="postCarla">X</button>
+            </span>
+          </div>
+          <h3 class="title_post width_text color_text">Como melhorar sua lógica de programação? Desenvolvemos 5 passos para te ajudar
+          </h3>
+          <p class="description_modal">p class="description_modal"ara quem está começando na área de T.I, em pleno século 21 este conceito pode parecer um grande desafio, pois requer muitas habilidades em diversas áreas de estudo, principalmente lógica</p>
+
+          <p class="description_modal">Como já informado, algoritmos são um conjunto de passos definidos para gerar um resultado. Aprender o conceito de instruções simples é a primeira etapa para compreender lógica de programação. No seu dia a dia você já aplicou um algoritmo e não percebeu. Como exemplo temos a instrução “escovar os dentes”:</p>
+            
+          <p class="description_modal">
+            - Pegar escova;
+            - Ligar torneira
+            - Limpar escova;
+            - Fechar torneira;
+            - Colocar pasta na escova;
+            - Escovar os dentes;
+          </p>
+        </article>
+      </div>
+
+      <div class="wrappe_modal" id="postJulia">
+        <article class="container_modal">
+          <div class="box_user_remove">
+            <span class="user">
+              <img src="../../assets/img/user5.svg" alt="">
+              <span>
+                <h4 class="name font_size20px color_text">Júlia Martins</h4>
+                <p class="craft color_text">Devop's</p>
+              </span>
+            </span>
+            <span>
+              <button class="buttonRemove_modal" data-modal="postJulia">X</button>
+            </span>
+          </div>
+          <h3 class="title_post color_text">NextJS como essa ferramenta revolucionou a maneira de desenvolver sites
+          </h3>
+          <p class="description_modal">Provavelmente, você já ouviu falar do Next.js, considerado o framework mais popular do mercado. Com a expansão do mercado de tecnologia e sua influência em serviços de diversos segmentos</p>
+
+          <p class="description_modal">Para tornar o carregamento de páginas mais rápido, o Next.js quebra o código automaticamente e é assim que assegura uma capacidade de carregamento de página mais rápida, já que os sites são criados para suportar um grande volume de acessos.</p>
+        </article>
+      </div>
   </body>
   <script src="../../script/database/users.js"></script>
   <script src="../../script/database/posts.js"></script>

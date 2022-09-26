@@ -1,0 +1,55 @@
+.wrappe_modal{
+    position: absolute;
+    width: 100vw;
+    height: 118.75rem;
+    left: 0rem;
+    top: 0rem;
+    display: none;
+    background: var(--color-grey-opacity-1);
+    z-index: 1; 
+}
+
+.container_modal{
+    width: 47.56rem;
+    position: absolute;
+    left: calc(50vw - 21.25rem);
+    top: calc(15vh);
+    padding: 0 1.25rem 1.25rem 1.25rem;
+    background: var(--color-white-fixed);
+    border-radius: 8px;
+}
+
+.box_user_remove{
+    width: 95%;
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+
+.show_screen{
+    display: flex;
+}
+
+.buttonRemove_modal{
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    width: 2rem;
+    height: 2rem;
+    font-family: var(--font-family-2);
+    background: transparent;
+    border-radius: 50%;
+    border: transparent;
+    color: var(--color-grey-3);
+    background-color: var(--color-grey-5);
+}
+
+.description_modal{
+    font-size: 1rem;
+    padding: 0 1rem;
+    text-align: justify;
+    line-height: 150%;
+    padding-bottom: 0.62rem;
+    color: var(--color-grey-2);
+}

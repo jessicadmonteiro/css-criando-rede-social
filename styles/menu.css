@@ -1,36 +1,30 @@
-.navbar{
-    width: 100vw;
+.container_menu{
+    width: 100%;
     color: var(--color-white-fixed);
     background-color: var(--color-grey-1);
     padding: 1.15rem 0;
     position: fixed;
-    /* display: none; */
+    top: 0;
+    z-index: 1;
+    
 }
 
-.navbar-items{
+.menu_items{
     display: flex;
     justify-content: space-between;
     padding: 0px 4rem;
 }
 
-.navbar-links{
-    display: flex;
-    gap: 1rem;
-}
-
-.navbar-link{
+.bt_leave{
     background-color: transparent;
     color: var(--color-white-fixed);
     height: 2rem;
     padding: 0.5rem;
     border: none;
     border-radius: var(--radius-1);
-    text-decoration: none;
     font-size: 0.875rem;
-    font-weight: 400;
-    cursor: pointer;
 }
 
-.navbar-link:hover, .navbar-link.actived{
+.bt_leave:hover{
     background-color: var(--color-grey-2);
 }

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
 * {
     margin: 0;
@@ -8,23 +9,25 @@
 
 :root{
     --color-blue-1: #4263EB;
+    --color-blue-2: #364FC7;
+    --color-blue-3: #EDF2FF;
+    --color-grey-0: #0A0C0D;
     --color-grey-1: #212529;
     --color-grey-2: #495057;
-    --color-grey-3: #eeeeee;
+    --color-grey-3: #868E96;
+    --color-grey-4: #DEE2E6;
+    --color-grey-5: #F8F9FA;
     --color-white-fixed: #ffffff;
+    --color-grey-opacity-1: rgba(33, 37, 41, 0.5);
     --radius-1: 0.25rem;
     --font-family-1: "Inter", sans-serif;
+    --font-family-2: 'Nunito', sans-serif;
 }
 
 body{
     font-family: var(--font-family-1);
-    background: var(--color-grey-3);
-}
-
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
+    background: var(--color-white-fixed);
+    
 }
 
 ul{

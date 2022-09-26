@@ -1,0 +1,81 @@
+@media(max-width: 425px){
+    .aside_desktop{
+        display: none;
+    }
+    
+    input,
+    textarea{
+        max-width: 24rem;
+    }
+
+    .bt_post{
+        margin-left: 21rem;
+    }
+
+    .aside_mobile{
+        height: 182px;
+        margin-bottom: 1rem;
+    
+    }
+
+    .aside_mobile > h4{
+        margin-top: -4.37rem;
+        font-size: 1.25rem;
+
+    }
+
+    .aside_mobile > ul{
+        width: 24rem;
+        display: flex;
+        overflow: scroll;
+    }
+
+    .aside_mobile > ul > li{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.43rem;
+        
+    }
+
+    .bt_follow{
+        margin-top: 0.62rem;
+        margin-left: -10rem;
+        
+    }
+
+    .title_post{
+        max-width: 21rem;
+        font-size: 1.75rem;
+        
+
+    }
+
+    .description{
+        max-width: 24rem;
+        -webkit-line-clamp: 5;
+    }
+
+    .wrappe_modal{
+        width: 28.12rem;
+        height: 2448px;
+        background: var(--color-grey-opacity-1);
+        
+    }
+    
+    .container_modal{
+        width: 24rem;
+        position: absolute;
+        left: 1.68rem;
+        top: 2.81rem;
+        padding: 0 1.25rem 1.25rem 1.25rem;
+        background: var(--color-white-fixed);
+        border-radius: 8px;
+    }
+
+}
+
+@media(min-width: 425px){
+    .aside_mobile{
+        display: none;
+    }
+}

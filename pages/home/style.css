@@ -1,0 +1,89 @@
+
+.container{
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+img{
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+.user{
+    width: 15.62rem;
+    display: flex;
+    gap: 0.62rem;
+    margin-top: 1.25rem;
+}
+
+.name{
+    width: 100%;
+    height: 1.5rem;
+}
+
+.craft{
+    font-size: 0.875rem;
+    color: var(--color-grey-2);
+}
+
+.width_text{
+    width: 44.56rem;
+}
+
+.title_post{
+    margin: 1.25rem ;
+    font-size: 1.75rem;
+}
+
+.description{
+    font-size: 1rem;
+    margin: 1.25rem;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: var(--color-grey-2);
+}
+
+.container_posts > li{
+    margin-bottom: 1.87rem;
+}
+
+small{
+    font-size: 0.87rem;
+}
+
+.aside_desktop{
+    width: 25rem;
+    height: 20rem;
+    margin-top: 6.25rem;
+    position: sticky;
+    top: 7rem;
+    z-index: 0;
+}
+
+.container_suggestions{
+    display: flex;
+    align-items: center;
+    gap: 3.12rem;
+    
+}
+
+.color_text{
+    color: var(--color-grey-1);
+}
+
+.font_size20px{
+    font-size: 1.25rem;
+}
+
+.pandding_top{
+    padding-top: 6.25rem;
+}
+
+.margim_bottom{
+    margin-bottom: 4rem;
+}

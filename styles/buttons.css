@@ -1,0 +1,67 @@
+.bt_post{
+    width: 4.31rem;
+    height: 2.37rem;
+    margin-left: 37rem;
+    color: var(--color-grey-3);
+    background: var(--color-grey-4);
+    border: transparent;
+    border-radius: 0.31rem;
+    margin-bottom: 6.25rem;
+    transition: 1s;
+}
+
+.bt_post:hover{
+    color: var(--color-white-fixed);
+    background-color: var(--color-blue-1);
+    transition: 1s;
+}
+
+.bt_open_post{
+    width: 5.75rem;
+    height: 2.37rem;
+    color: var(--color-white-fixed);
+    background: var(--color-grey-1);
+    border: transparent;
+    border-radius: 0.31rem;
+    margin-left: 1.25rem;
+}
+
+.bt_open_post:hover{
+    background-color: var(--color-grey-0);
+}
+
+.bt_heart{
+    font-size: 1.40rem;
+    margin-left: 0.62rem;
+}
+
+.bt_follow{
+    width: 5.56rem;
+    height: 1.75rem;
+    font-size: 0.87rem;
+    color: var(--color-grey-1);
+    background-color: var(--color-white-fixed);
+    border: solid 1px var(--color-grey-1);
+    transition: 1s;
+}
+
+.bt_follow:hover{
+    color: var(--color-blue-1);
+    border: solid 1px var(--color-blue-1);
+    background: var(--color-blue-3);
+    transition: 1s;
+}
+
+.bt_following{
+    width: 5.56rem;
+    height: 1.75rem;
+    font-size: 0.87rem;
+    color: var(--color-white-fixed);
+    background-color: var(--color-blue-1);
+    border: 1px solid var(--color-blue-1);
+}
+
+.bt_trasparent{
+    background-color: transparent;
+    border: transparent;
+}
